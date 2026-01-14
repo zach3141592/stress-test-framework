@@ -1,0 +1,44 @@
+{
+  "name": "stress-test-framework",
+  "version": "1.0.0",
+  "description": "A stress testing framework to test website reliability",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "bin": {
+    "stress-test": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/cli.js",
+    "dev": "tsc && node dist/cli.js",
+    "clean": "rm -rf dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zach3141592/stress-test-framework.git"
+  },
+  "keywords": [
+    "stress-test",
+    "load-test",
+    "performance",
+    "http",
+    "benchmark"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zach3141592/stress-test-framework/issues"
+  },
+  "homepage": "https://github.com/zach3141592/stress-test-framework#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "commander": "^14.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.8",
+    "typescript": "^5.9.3"
+  }
+}
